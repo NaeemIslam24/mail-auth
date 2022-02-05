@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+login page
+{% endblock %}
+
+
+{% block content %}
+<h1>welcome {{request.user.username}}<h1/>
+{% endblock %}
