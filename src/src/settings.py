@@ -132,5 +132,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "nayemnehal.cu@gmail.com"
-EMAIL_HOST_PASSWORD = 'nnnnssss$$$$'
+EMAIL_HOST_USER = "stackpro.org@gmail.com"
+EMAIL_HOST_PASSWORD = 'nrnrnrnr1234'

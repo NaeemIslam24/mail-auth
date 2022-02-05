@@ -46,9 +46,10 @@ def login_auth(request):
           
           return redirect('login')
 
-
-
     return render(request, template_name=template)
+
+
+
 
 def register(request):
 
@@ -73,7 +74,7 @@ def register(request):
                 auth_token = str(uuid.uuid4())
                 profile_obj = Profile.objects.create(user = user_obj, auth_token = auth_token)          
                 profile_obj.save()
-                sent_registation_mail(email, auth_token)
+                sent_registation_mail(email, auth_token, username)
                 return redirect('token')
             else:
                 messages.error(request, 'Password and confirm password not matched')
@@ -128,9 +129,9 @@ def error(request):
     return render(request, template_name=template)
 
 
-def sent_registation_mail(email, token):
+def sent_registation_mail(email, token, username):
     subject = 'Your accounts need to be verified'
-    message = f'Hi paste the link to verify your account http://127.0.0.1:8000/verify/{token}'
+    message = f'Hi {username}! please click the link to verify your account http://127.0.0.1:8000/verify/{token}'
 
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
