@@ -131,7 +131,7 @@ def error(request):
 
 def sent_registation_mail(email, token, username):
     subject = 'Your accounts need to be verified'
-    message = f'Hi {username}! please click the link to verify your account http://127.0.0.1:8000/verify/{token}'
+    message = f'Hi {username}! please click the link to verify your account https://auth-mail.herokuapp.com/verify/{token}'
 
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
