@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3x^ere%-(be8@qw3l-9#rn$a)g1tpr*nj79(d46rydp8)9+!!(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['auth-mail.herokuapp.com', 'localhost', '127.0.0.1:8000/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -135,4 +135,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "stackpro.org@gmail.com"
-EMAIL_HOST_PASSWORD = 'nrnrnrnr1234'
+EMAIL_HOST_PASSWORD = 'pass'
